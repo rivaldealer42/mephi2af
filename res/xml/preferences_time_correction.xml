@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceScreen
+    android:key="sync_now"
+    android:title="@string/timesync_sync_now_preference_title"
+    android:persistent="false">
+    <intent
+      android:targetPackage="@string/app_package_name"
+      android:targetClass="com.google.android.apps.authenticator.timesync.SyncNowActivity">
+    </intent>
+  </PreferenceScreen>
+  <EditTextPreference
+      android:defaultValue="0"
+      android:inputType="numberSigned"
+      android:key="timeCorrectionMinutes"
+      android:title="Adjustment in minutes" />
+  <PreferenceScreen
+    android:key="about"
+    android:title="@string/timesync_about_feature_preference_title"
+    android:persistent="false">
+    <intent
+      android:targetPackage="@string/app_package_name"
+      android:targetClass="com.google.android.apps.authenticator.timesync.AboutActivity">
+    </intent>
+  </PreferenceScreen>
+</PreferenceScreen>

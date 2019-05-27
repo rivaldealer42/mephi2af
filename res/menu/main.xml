@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/normal_grp">
+        <item
+            android:id="@+id/add_account"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="@string/add_account_menu_item" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="@string/settings_menu_item" />
+    </group>
+</menu>
